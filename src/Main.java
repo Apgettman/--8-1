@@ -37,8 +37,13 @@ public class Main {
 
         // Задача 4
 
-        for (int i = 0; i < weights.length; i = i + 2) {
-            System.out.print(weights[i]);
+        for (int i = 0; i < weights.length; i++) {
+            if (weights[i] % 2 != 0) {
+                weights[i] = weights[i] + 1;
+                System.out.print(weights[i]);
+            }
         }
     }
 }
+
+
